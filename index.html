@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="#">Covid 19 Info</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+      </nav>
+
+    <div class="container">
+        <div class="display-3 my-4">Covid 19 Infomation</div>
+
+        <div class="row">
+          <div class="col-md-12 form-inline my-3">
+            <div class="form-group">
+              <input class="form-control" type="text" style="width: 500px;" class="d-inline-block" name="country" id="country" placeholder="contry name">
+            </div>
+            <button type="submit" class="btn btn-primary mx-2" id="search">Search</button>
+          </div> 
+        </div>
+
+        <h1>Country Infomation</h1>
+        <div class="row my-3">
+          <div class="col-md-12 result">
+
+          </div>
+        </div>
+
+        <h1>Globle Infomation</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card text-dark bg-secondary mb-3">
+              <div class="card-header">Comfirmed</div>
+              <div class="card-body">
+                <div class="h1">Total: <span id="confirm"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-white bg-info mb-3">
+              <div class="card-header">Recovered</div>
+              <div class="card-body">
+                <div class="h1">Total: <span id="recovered"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-white bg-dark mb-3">
+              <div class="card-header">Critical</div>
+              <div class="card-body">
+                <div class="h1">Total: <span id="critical"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card text-white bg-danger mb-3">
+              <div class="card-header">Deaths</div>
+              <div class="card-body">
+                <div class="h1">Total: <span id="deaths"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
